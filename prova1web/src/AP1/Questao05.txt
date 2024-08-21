@@ -1,0 +1,10 @@
+De forma resumida, o uso de contexto pode resolver o problema de props drilling pois, através dele, pode-se passar dados entre a árvore de componentes sem precisar passar props manualmente em cada nível.
+
+Um exemplo do uso de useContext ao invés de props segue no cógigo abaixo:
+
+export default function Painel() { 
+const value = useContext(UserContext)
+   return <div>
+                 Bom dia, { value } 
+              </div>
+}
